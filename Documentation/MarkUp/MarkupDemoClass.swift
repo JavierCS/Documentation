@@ -24,7 +24,7 @@ class MarkupDemoClass {
      
      Display a line of text formatted as a heading.
      
-     This is a Heading 1
+     # This is a Heading 1
      ===================
      ## This is a Heading 2
      */
