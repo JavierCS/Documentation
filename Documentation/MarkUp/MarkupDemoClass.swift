@@ -209,6 +209,15 @@ class MarkupDemoClass {
     func bugDelimiterUsage() {}
     
     /**
+     Use the callout to add tasks required to complete or update the functionality of the symbol.
+     
+     Add a ToDo callout to the Quick Help for a symbol using the To Do delimiter. Multiple To do callouts appear in the description section in the same order as they do in the markup.
+     
+     - ToDo: Do some Tasks.
+     */
+    func toDoDelimiterUsage() {}
+    
+    /**
      Little description for the function
      
      Add a Complexity callout to the Quick Help for a symbol using the Complexity delimiter. Multiple Complexity callouts appear in the description section in the same order as they do in the markup.
@@ -457,15 +466,14 @@ class MarkupDemoClass {
      */
     func completeExample() {}
     
-    //TODO: Para señalar partes del código que aún están incompletas o necesitan ser implementadas.
-    //FIXME: Para resaltar partes del código que son incorrectas y necesitan ser corregidas.
-    //MARK: Para dividir y organizar visualmente tu código en secciones lógicas, como métodos, propiedades, extensiones, etc.
-    //BUG: Para indicar la presencia de un error conocido en el código.
-    //OPTIMIZE: Para señalar áreas del código que podrían ser optimizadas para mejorar el rendimiento.
-    //WARNING: Para advertir sobre posibles problemas o situaciones que deben tenerse en cuenta.
-    //NOTE: Para agregar comentarios importantes o explicativos sobre partes específicas del código.
-    //IDEA: Para registrar ideas o sugerencias para futuras mejoras en el código.
-    //HACK: Para indicar soluciones temporales o poco elegantes que se han implementado y que necesitan una mejor solución en el futuro.
-    //REFACTOR: Para señalar partes del código que pueden necesitar ser refactorizadas para mejorar su estructura o legibilidad.
+    // MARK: - Xcode Annotations
     
+    // TODO: Para señalar partes del código que aún están incompletas o necesitan ser implementadas.
+    // FIXME: Para resaltar partes del código que son incorrectas y necesitan ser corregidas.
+    // MARK: Para dividir y organizar visualmente tu código en secciones lógicas, como métodos, propiedades, extensiones, etc.
+    
+    // MARK: - Swift Compiler Directives
+    
+#warning("This is a Warning.")
+#error("This is an Error.")
 }
